@@ -48,29 +48,16 @@ public class MovieService : IMovieService
                 (t.Name + t.Director + t.Country + t.Year).ToLower().Contains(searchQuery.ToLower()));
         }
 
-        switch (sortQuery)
+        movies = sortQuery switch
         {
-            case SortConstraints.BudgetAscending:
-                movies = movies.OrderBy(t => t.Budget);
-                break;
-            case SortConstraints.BudgetDescending:
-                movies = movies.OrderByDescending(t => t.Budget);
-                break;
-            case SortConstraints.YearAscending:
-                movies = movies.OrderBy(t => t.Year);
-                break;
-            case SortConstraints.YearDescending:
-                movies = movies.OrderByDescending(t => t.Year);
-                break;
-            case SortConstraints.NameAscending:
-                movies = movies.OrderBy(t => t.Name);
-                break;
-            case SortConstraints.NameDescending:
-                movies = movies.OrderByDescending(t => t.Name);
-                break;
-            default:
-                break;
-        }
+            SortConstraints.BudgetAscending => movies.OrderBy(t => t.Budget),
+            SortConstraints.BudgetDescending => movies.OrderByDescending(t => t.Budget),
+            SortConstraints.YearAscending => movies.OrderBy(t => t.Year),
+            SortConstraints.YearDescending => movies.OrderByDescending(t => t.Year),
+            SortConstraints.NameAscending => movies.OrderBy(t => t.Name),
+            SortConstraints.NameDescending => movies.OrderByDescending(t => t.Name),
+            _ => movies
+        };
 
         return await movies.Page(pageSize, pageNumber).ToListAsync();
     }
