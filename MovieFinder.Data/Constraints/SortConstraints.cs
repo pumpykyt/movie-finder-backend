@@ -8,4 +8,6 @@ public static class SortConstraints
     public const string BudgetDescending = "budget_desc";
     public const string NameAscending = "name_asc";
     public const string NameDescending = "name_desc";
+    public const string AgeDescending = "age_desc";
+    public const string AgeAscending = "age_asc";
 }

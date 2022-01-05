@@ -5,11 +5,19 @@
     <projectFile profileName="IIS Express">MovieFinder.Web/MovieFinder.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be840175-e424-4887-b669-5ef83389fd63" name="Changes" comment="" />
+    <list default="true" id="be840175-e424-4887-b669-5ef83389fd63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Interfaces/IActorService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Services/ActorService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieFinder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Data/Constraints/SortConstraints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Data/Constraints/SortConstraints.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,6 +82,7 @@
       <workItem from="1641409304177" duration="494000" />
       <workItem from="1641409831051" duration="735000" />
       <workItem from="1641410948088" duration="553000" />
+      <workItem from="1641412587969" duration="1548000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1641409569405</created>
