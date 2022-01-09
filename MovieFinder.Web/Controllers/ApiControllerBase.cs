@@ -9,5 +9,5 @@ public abstract class ApiControllerBase : ControllerBase
 {
     protected readonly ISender Mediator;
 
-    public ApiControllerBase(ISender mediator) => Mediator = mediator ?? throw new ArgumentNullException();
+    protected ApiControllerBase(ISender mediator) => Mediator = mediator ?? throw new ArgumentNullException();
 }

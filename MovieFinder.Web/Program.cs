@@ -20,6 +20,9 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IMarkService, MarkService>();
+builder.Services.AddScoped<IActorService, ActorService>();
+builder.Services.AddScoped<ISearchService, SearchService>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
 builder.Services.AddDbContext<DataContext>(a =>
     a.UseNpgsql(builder.Configuration.GetSection("ConnectionString").Value,

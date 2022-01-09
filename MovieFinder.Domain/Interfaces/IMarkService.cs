@@ -1,7 +1,10 @@
-﻿namespace MovieFinder.Domain.Interfaces;
+﻿using MovieFinder.Data.Entities;
+
+namespace MovieFinder.Domain.Interfaces;
 
 public interface IMarkService
 {
-    Task<double> CreateMarkAsync(string movieId, int value);
+    Task<Mark> CreateMarkAsync(string movieId, string userId, int value);
     Task<double> DeleteMarkAsync(string markId);
+    Task<List<Mark>> GetUserMarksAsync(string userId);
 }

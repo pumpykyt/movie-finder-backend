@@ -4,6 +4,7 @@ public class Mark
 {
     public string Id { get; set; }
     public int Value { get; set; }
+    public DateTime Created { get; set; }
     public string UserId { get; set; }
     public string MovieId { get; set; }
     public virtual User User { get; set; }

@@ -6,18 +6,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be840175-e424-4887-b669-5ef83389fd63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Interfaces/IActorService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Services/ActorService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Commands/CreateMarkCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Commands/DeleteMarkCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Handlers/CreateMarkHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Handlers/DeleteMarkHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Handlers/GetUserMarksHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Handlers/SearchActorsAndMoviesHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Models/Requests/ActorRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Models/Responses/ActorResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Models/Responses/DeleteMarkResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Models/Responses/MarkResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Models/Responses/SearchResultResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Queries/GetUserMarksQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Application/Queries/SearchActorsAndMoviesQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Interfaces/ISearchService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Models/SearchResultDomain.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Domain/Services/SearchService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieFinder.Web/Controllers/MarkController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieFinder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieFinder.Data/Constraints/SortConstraints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Data/Constraints/SortConstraints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Application/Models/Requests/MarkRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Application/Models/Requests/MarkRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Application/Models/Responses/UserMarkResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Application/Profiles/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Application/Profiles/MappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Data/Entities/Mark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Data/Entities/Mark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Domain/Interfaces/IMarkService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Domain/Interfaces/IMarkService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Domain/Services/MarkService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Domain/Services/MarkService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Web/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Web/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieFinder.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFinder.Web/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,7 +102,7 @@
       <workItem from="1641409304177" duration="494000" />
       <workItem from="1641409831051" duration="735000" />
       <workItem from="1641410948088" duration="553000" />
-      <workItem from="1641412587969" duration="1548000" />
+      <workItem from="1641701958122" duration="5750000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1641409569405</created>
